@@ -13,6 +13,7 @@ namespace DataAccessLayer.Abstract
         //CRUD
         //type name();
         List<T> List();
+        T Get(Expression<Func<T, bool>> filter);
         void Insert(T t);
         void Update(T t);
         void Delete(T t);
